@@ -30,6 +30,16 @@ return null;
             if(winner==="Tie"){
                 message.textcontent="It is a tie!";
             }
+            else{
+                message.textcontent='player ${winner} wins!';
+            }
+            else{
+                currentplayer=currentplayer==="X"?"O":"X";
+                message.textcontent='player ${currentplayer} turn';
+            }
+
+            }
+            }
         }
     }
 }
