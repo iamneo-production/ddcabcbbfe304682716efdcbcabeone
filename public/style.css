@@ -33,7 +33,21 @@ body {
   cursor: pointer;
 
 }
-
 button {
-
+  display: block;
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 50px;
+  background-color: whitesmoke;
+  color: white;
+  border: 75px;
+  cursor: pointer;
 }
+
+button:hover {
+  background-color: aqua;
+  
+}
+
+
+
