@@ -13,8 +13,26 @@ function checkwinn(){
             return gameBoard[a];
     }
 
+
 }
-if(!)
+
+if(!gameBoard.includes("")){
+    return "Tie";
+}
+return null;
+}function handleclick(event){
+    const cellIndex=event.target.id;
+    if(!gameBoard[cellIndex] && !gameover){
+        gameBoard[cellIndex]=currentpalyer;
+        const winner=checkwinn();
+        if(winner){
+            gameover=true;
+            if(winner==="Tie"){
+                message.textcontent="It is a tie!";
+            }
+        }
+    }
+}
 //app.use('/static', express.static('public'))
 app.use(express.static('public'))
 app.listen(port, () => console.log(`listening on port ${port}!`));
